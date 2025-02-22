@@ -1,5 +1,5 @@
 # Core dependencies
-sqlite3>=>= 3.35.0
+pysqlite3>=>= 0.5.4
 streamlit>=1.42.0
 chromadb>=0.6.3
 llama-index>=0.12.19
