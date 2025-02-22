@@ -143,6 +143,7 @@ try:
                 response = generate_response_with_gemini(full_prompt)
                 
                 if response:
+                    response = response.replace('[PERGUNTA]', '').replace('[RESPOSTA]', '').strip()
                     st.session_state.messages.append(
                         {"role": "assistant", "content": response}
                     )
