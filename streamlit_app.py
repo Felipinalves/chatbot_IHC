@@ -114,31 +114,23 @@ try:
                 
                 st.write("Gerando resposta...")
                 # Gerar prompt completo
-                full_prompt = f"""[INSTRUÇÕES DETALHADAS]
-    Você é um especialista em IHC (Interação Humano-Computador) com vasta experiência acadêmica e prática.
-    Sua tarefa é fornecer respostas precisas e bem fundamentadas, baseadas exclusivamente no contexto fornecido.
-    
-    [DIRETRIZES DE RESPOSTA]
-    1. Linguagem: Use português brasileiro formal
-    2. Termos técnicos: Mantenha termos técnicos consolidados em inglês
-    3. Estrutura: Organize a resposta em parágrafos claros e concisos
-    4. Citações: Mencione autores/fontes quando relevante
-    5. Exemplos: Inclua exemplos práticos quando apropriado
-    
-    [CONTEXTO ACADÊMICO]
-    {context}
-    
-    [PERGUNTA]
-    {prompt}
-    
-    [FORMATO ESPERADO]
-    1. Inicie com uma resposta direta à pergunta
-    2. Desenvolva a explicação com detalhes relevantes
-    3. Conclua com uma síntese prática
-    4. Se houver divergências na literatura, apresente as diferentes visões
-    
-    [RESPOSTA EM PORTUGUÊS]
-    """
+                full_prompt = f"""Você é um especialista em IHC (Interação Humano-Computador) com vasta experiência acadêmica e prática.
+Sua tarefa é fornecer respostas precisas e bem fundamentadas, baseadas exclusivamente no contexto fornecido.
+
+[DIRETRIZES]
+- Use português brasileiro formal
+- Mantenha termos técnicos consolidados em inglês
+- Organize a resposta em parágrafos claros e concisos
+- Mencione autores/fontes quando relevante
+- Inclua exemplos práticos quando apropriado
+
+[CONTEXTO]
+{context}
+
+Pergunta: {prompt}
+
+Forneça uma resposta direta e bem estruturada, desenvolvendo a explicação com detalhes relevantes e concluindo com aspectos práticos. Se houver diferentes visões na literatura, apresente-as.
+"""
                 # Gerar resposta
                 response = generate_response_with_gemini(full_prompt)
                 
