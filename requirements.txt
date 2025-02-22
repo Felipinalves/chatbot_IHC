@@ -1,5 +1,6 @@
 nltk
 streamlit>=1.42.0
+pysqlite3-binary
 chromadb>=0.6.3
 llama-index>=0.12.19
 llama-index-vector-stores-chroma
