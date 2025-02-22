@@ -122,7 +122,6 @@ Sua tarefa é fornecer respostas precisas e bem fundamentadas, baseadas no conte
 - Mantenha termos técnicos consolidados em inglês
 - Organize a resposta em parágrafos claros e concisos
 - Mencione autores/fontes quando relevante
-- Inclua exemplos práticos quando apropriado (não necessariamente precisa ser o do contexto. Se caso usar o do contexto, especifique resumidamente do que se trata o artigo)
 
 [CONTEXTO]
 {context}
