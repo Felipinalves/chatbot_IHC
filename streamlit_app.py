@@ -115,7 +115,7 @@ try:
                 st.write("Gerando resposta...")
                 # Gerar prompt completo
                 full_prompt = f"""Você é um especialista em IHC (Interação Humano-Computador) com vasta experiência acadêmica e prática.
-Sua tarefa é fornecer respostas precisas e bem fundamentadas, baseadas exclusivamente no contexto fornecido.
+Sua tarefa é fornecer respostas precisas e bem fundamentadas, baseadas no contexto fornecido.
 
 [DIRETRIZES]
 - Use português brasileiro formal
