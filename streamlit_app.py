@@ -1,3 +1,8 @@
+# Estas linhas DEVEM vir antes de qualquer outro import
+__import__('pysqlite3')
+import sys
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+
 import streamlit as st
 import chromadb
 import time
