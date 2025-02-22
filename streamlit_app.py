@@ -6,17 +6,12 @@ import streamlit as st
 import chromadb
 import time
 import os
-import asyncio
 from llama_index.core import VectorStoreIndex, SimpleDirectoryReader
 from llama_index.vector_stores.chroma.base import ChromaVectorStore
 from llama_index.core import StorageContext
 from llama_index.core import Settings
 from llama_index.embeddings.huggingface import HuggingFaceEmbedding
 import google.generativeai as genai
-
-# Fix for asyncio error
-import nest_asyncio
-nest_asyncio.apply()
 
 # Configuração da página
 st.set_page_config(
