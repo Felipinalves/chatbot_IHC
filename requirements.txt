@@ -1,4 +1,6 @@
-# Core dependencies
+libsqlite3-dev
+python3-dev
+gcc
 pysqlite3>= 0.5.4
 pysqlite3-binary>=0.5.2
 streamlit>=1.42.0
