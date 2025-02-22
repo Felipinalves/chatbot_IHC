@@ -1,11 +1,26 @@
-streamlit
-openai
-llama-index
-nltk
-chromadb
-llama_index.core
-llama_index.vector_stores.chroma.base 
-llama_index.core 
-llama_index.core 
-llama_index.embeddings.huggingface 
-google.generativeai 
+# Core dependencies
+streamlit>=1.31.0
+chromadb>=0.4.22
+llama-index>=0.10.1
+google-generativeai>=0.3.2
+pysqlite3-binary>=0.5.2
+
+# Embedding and ML dependencies
+sentence-transformers>=2.3.1
+torch>=2.2.0
+transformers>=4.37.0
+
+# Vector store and database
+chromadb>=0.4.22
+sqlalchemy>=2.0.25
+
+# Utility dependencies
+python-dotenv>=1.0.0
+typing-extensions>=4.9.0
+numpy>=1.26.0
+pandas>=2.2.0
+
+# Optional but recommended
+pytest>=8.0.0  # for testing
+black>=24.1.0  # for code formatting
+flake8>=7.0.0  # for code linting
